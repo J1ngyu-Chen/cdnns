@@ -1,0 +1,128 @@
+[
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/bin/gcc -DIMPL_CUDA -I/usr/local/cuda-13.0/include -I/home/main/Source/cdnns/include -I/home/main/Source/cdnns/libs/elu -O3 -DNDEBUG -std=gnu11 -o CMakeFiles/elu.dir/libs/elu/core.c.o -c /home/main/Source/cdnns/libs/elu/core.c",
+  "file": "/home/main/Source/cdnns/libs/elu/core.c",
+  "output": "CMakeFiles/elu.dir/libs/elu/core.c.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/bin/gcc -DIMPL_CUDA -I/usr/local/cuda-13.0/include -I/home/main/Source/cdnns/include -I/home/main/Source/cdnns/libs/elu -O3 -DNDEBUG -std=gnu11 -o CMakeFiles/elu.dir/libs/elu/impl_basic.c.o -c /home/main/Source/cdnns/libs/elu/impl_basic.c",
+  "file": "/home/main/Source/cdnns/libs/elu/impl_basic.c",
+  "output": "CMakeFiles/elu.dir/libs/elu/impl_basic.c.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/local/cuda-13.0/bin/nvcc -forward-unknown-to-host-compiler -DIMPL_CUDA --options-file CMakeFiles/elu.dir/includes_CUDA.rsp -O3 -DNDEBUG \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" -x cu -c /home/main/Source/cdnns/libs/elu/impl_cuda.cu -o CMakeFiles/elu.dir/libs/elu/impl_cuda.cu.o",
+  "file": "/home/main/Source/cdnns/libs/elu/impl_cuda.cu",
+  "output": "CMakeFiles/elu.dir/libs/elu/impl_cuda.cu.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/bin/gcc -DIMPL_CUDA -I/usr/local/cuda-13.0/include -I/home/main/Source/cdnns/include -I/home/main/Source/cdnns/libs/leakyrelu -O3 -DNDEBUG -std=gnu11 -o CMakeFiles/leakyrelu.dir/libs/leakyrelu/core.c.o -c /home/main/Source/cdnns/libs/leakyrelu/core.c",
+  "file": "/home/main/Source/cdnns/libs/leakyrelu/core.c",
+  "output": "CMakeFiles/leakyrelu.dir/libs/leakyrelu/core.c.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/bin/gcc -DIMPL_CUDA -I/usr/local/cuda-13.0/include -I/home/main/Source/cdnns/include -I/home/main/Source/cdnns/libs/leakyrelu -O3 -DNDEBUG -std=gnu11 -o CMakeFiles/leakyrelu.dir/libs/leakyrelu/impl_basic.c.o -c /home/main/Source/cdnns/libs/leakyrelu/impl_basic.c",
+  "file": "/home/main/Source/cdnns/libs/leakyrelu/impl_basic.c",
+  "output": "CMakeFiles/leakyrelu.dir/libs/leakyrelu/impl_basic.c.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/local/cuda-13.0/bin/nvcc -forward-unknown-to-host-compiler -DIMPL_CUDA --options-file CMakeFiles/leakyrelu.dir/includes_CUDA.rsp -O3 -DNDEBUG \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" -x cu -c /home/main/Source/cdnns/libs/leakyrelu/impl_cuda.cu -o CMakeFiles/leakyrelu.dir/libs/leakyrelu/impl_cuda.cu.o",
+  "file": "/home/main/Source/cdnns/libs/leakyrelu/impl_cuda.cu",
+  "output": "CMakeFiles/leakyrelu.dir/libs/leakyrelu/impl_cuda.cu.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/bin/gcc -DIMPL_CUDA -I/usr/local/cuda-13.0/include -I/home/main/Source/cdnns/include -I/home/main/Source/cdnns/libs/linear -O3 -DNDEBUG -std=gnu11 -o CMakeFiles/linear.dir/libs/linear/core.c.o -c /home/main/Source/cdnns/libs/linear/core.c",
+  "file": "/home/main/Source/cdnns/libs/linear/core.c",
+  "output": "CMakeFiles/linear.dir/libs/linear/core.c.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/bin/gcc -DIMPL_CUDA -I/usr/local/cuda-13.0/include -I/home/main/Source/cdnns/include -I/home/main/Source/cdnns/libs/linear -O3 -DNDEBUG -std=gnu11 -o CMakeFiles/linear.dir/libs/linear/impl_basic.c.o -c /home/main/Source/cdnns/libs/linear/impl_basic.c",
+  "file": "/home/main/Source/cdnns/libs/linear/impl_basic.c",
+  "output": "CMakeFiles/linear.dir/libs/linear/impl_basic.c.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/local/cuda-13.0/bin/nvcc -forward-unknown-to-host-compiler -DIMPL_CUDA --options-file CMakeFiles/linear.dir/includes_CUDA.rsp -O3 -DNDEBUG \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" -x cu -c /home/main/Source/cdnns/libs/linear/impl_cuda.cu -o CMakeFiles/linear.dir/libs/linear/impl_cuda.cu.o",
+  "file": "/home/main/Source/cdnns/libs/linear/impl_cuda.cu",
+  "output": "CMakeFiles/linear.dir/libs/linear/impl_cuda.cu.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/bin/gcc -DIMPL_CUDA -I/usr/local/cuda-13.0/include -I/home/main/Source/cdnns/include -I/home/main/Source/cdnns/libs/relu -O3 -DNDEBUG -std=gnu11 -o CMakeFiles/relu.dir/libs/relu/core.c.o -c /home/main/Source/cdnns/libs/relu/core.c",
+  "file": "/home/main/Source/cdnns/libs/relu/core.c",
+  "output": "CMakeFiles/relu.dir/libs/relu/core.c.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/bin/gcc -DIMPL_CUDA -I/usr/local/cuda-13.0/include -I/home/main/Source/cdnns/include -I/home/main/Source/cdnns/libs/relu -O3 -DNDEBUG -std=gnu11 -o CMakeFiles/relu.dir/libs/relu/impl_basic.c.o -c /home/main/Source/cdnns/libs/relu/impl_basic.c",
+  "file": "/home/main/Source/cdnns/libs/relu/impl_basic.c",
+  "output": "CMakeFiles/relu.dir/libs/relu/impl_basic.c.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/local/cuda-13.0/bin/nvcc -forward-unknown-to-host-compiler -DIMPL_CUDA --options-file CMakeFiles/relu.dir/includes_CUDA.rsp -O3 -DNDEBUG \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" -x cu -c /home/main/Source/cdnns/libs/relu/impl_cuda.cu -o CMakeFiles/relu.dir/libs/relu/impl_cuda.cu.o",
+  "file": "/home/main/Source/cdnns/libs/relu/impl_cuda.cu",
+  "output": "CMakeFiles/relu.dir/libs/relu/impl_cuda.cu.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/bin/gcc -DIMPL_CUDA -I/usr/local/cuda-13.0/include -I/home/main/Source/cdnns/include -I/home/main/Source/cdnns/libs/sigmoid -O3 -DNDEBUG -std=gnu11 -o CMakeFiles/sigmoid.dir/libs/sigmoid/core.c.o -c /home/main/Source/cdnns/libs/sigmoid/core.c",
+  "file": "/home/main/Source/cdnns/libs/sigmoid/core.c",
+  "output": "CMakeFiles/sigmoid.dir/libs/sigmoid/core.c.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/bin/gcc -DIMPL_CUDA -I/usr/local/cuda-13.0/include -I/home/main/Source/cdnns/include -I/home/main/Source/cdnns/libs/sigmoid -O3 -DNDEBUG -std=gnu11 -o CMakeFiles/sigmoid.dir/libs/sigmoid/impl_basic.c.o -c /home/main/Source/cdnns/libs/sigmoid/impl_basic.c",
+  "file": "/home/main/Source/cdnns/libs/sigmoid/impl_basic.c",
+  "output": "CMakeFiles/sigmoid.dir/libs/sigmoid/impl_basic.c.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/local/cuda-13.0/bin/nvcc -forward-unknown-to-host-compiler -DIMPL_CUDA --options-file CMakeFiles/sigmoid.dir/includes_CUDA.rsp -O3 -DNDEBUG \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" -x cu -c /home/main/Source/cdnns/libs/sigmoid/impl_cuda.cu -o CMakeFiles/sigmoid.dir/libs/sigmoid/impl_cuda.cu.o",
+  "file": "/home/main/Source/cdnns/libs/sigmoid/impl_cuda.cu",
+  "output": "CMakeFiles/sigmoid.dir/libs/sigmoid/impl_cuda.cu.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/bin/gcc -DIMPL_CUDA -I/usr/local/cuda-13.0/include -I/home/main/Source/cdnns/include -I/home/main/Source/cdnns/libs/softmax -O3 -DNDEBUG -std=gnu11 -o CMakeFiles/softmax.dir/libs/softmax/core.c.o -c /home/main/Source/cdnns/libs/softmax/core.c",
+  "file": "/home/main/Source/cdnns/libs/softmax/core.c",
+  "output": "CMakeFiles/softmax.dir/libs/softmax/core.c.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/bin/gcc -DIMPL_CUDA -I/usr/local/cuda-13.0/include -I/home/main/Source/cdnns/include -I/home/main/Source/cdnns/libs/softmax -O3 -DNDEBUG -std=gnu11 -o CMakeFiles/softmax.dir/libs/softmax/impl_basic.c.o -c /home/main/Source/cdnns/libs/softmax/impl_basic.c",
+  "file": "/home/main/Source/cdnns/libs/softmax/impl_basic.c",
+  "output": "CMakeFiles/softmax.dir/libs/softmax/impl_basic.c.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/local/cuda-13.0/bin/nvcc -forward-unknown-to-host-compiler -DIMPL_CUDA --options-file CMakeFiles/softmax.dir/includes_CUDA.rsp -O3 -DNDEBUG \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" -x cu -c /home/main/Source/cdnns/libs/softmax/impl_cuda.cu -o CMakeFiles/softmax.dir/libs/softmax/impl_cuda.cu.o",
+  "file": "/home/main/Source/cdnns/libs/softmax/impl_cuda.cu",
+  "output": "CMakeFiles/softmax.dir/libs/softmax/impl_cuda.cu.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/bin/gcc -DIMPL_CUDA -I/usr/local/cuda-13.0/include -I/home/main/Source/cdnns/include -I/home/main/Source/cdnns/libs/tanh -O3 -DNDEBUG -std=gnu11 -o CMakeFiles/tanh.dir/libs/tanh/core.c.o -c /home/main/Source/cdnns/libs/tanh/core.c",
+  "file": "/home/main/Source/cdnns/libs/tanh/core.c",
+  "output": "CMakeFiles/tanh.dir/libs/tanh/core.c.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/bin/gcc -DIMPL_CUDA -I/usr/local/cuda-13.0/include -I/home/main/Source/cdnns/include -I/home/main/Source/cdnns/libs/tanh -O3 -DNDEBUG -std=gnu11 -o CMakeFiles/tanh.dir/libs/tanh/impl_basic.c.o -c /home/main/Source/cdnns/libs/tanh/impl_basic.c",
+  "file": "/home/main/Source/cdnns/libs/tanh/impl_basic.c",
+  "output": "CMakeFiles/tanh.dir/libs/tanh/impl_basic.c.o"
+},
+{
+  "directory": "/home/main/Source/cdnns/build",
+  "command": "/usr/local/cuda-13.0/bin/nvcc -forward-unknown-to-host-compiler -DIMPL_CUDA --options-file CMakeFiles/tanh.dir/includes_CUDA.rsp -O3 -DNDEBUG \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" -x cu -c /home/main/Source/cdnns/libs/tanh/impl_cuda.cu -o CMakeFiles/tanh.dir/libs/tanh/impl_cuda.cu.o",
+  "file": "/home/main/Source/cdnns/libs/tanh/impl_cuda.cu",
+  "output": "CMakeFiles/tanh.dir/libs/tanh/impl_cuda.cu.o"
+}
+]
