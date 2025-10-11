@@ -1,0 +1,1 @@
+-I"/usr/local/cuda-13.0/include" -I/home/main/Source/cdnns/include -I/home/main/Source/cdnns/libs/sigmoid
