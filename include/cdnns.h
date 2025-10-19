@@ -9,20 +9,6 @@
 #include <stdbool.h>
 #include <math.h>
 
-#include <cblas64.h>
-
-#ifdef USE_ONEMKL
-#include "mkl_cblas.h"
-#define IMPL_CBLAS
-typedef MKL_INT cblasint;
-#endif
-
-#ifdef USE_OPENBLAS
-#include "cblas.h"
-#define IMPL_CBLAS
-typedef blasint cblasint;
-#endif
-
 enum cdnns_type {
 	CDNNS_TYPE_FP32,
 	CDNNS_TYPE_FP64,
