@@ -1,6 +1,6 @@
 #include "core.h"
 
-void cdnns_linear_fwd(enum cdnns_type type, enum cdnns_mode mode,
+void cdnns_fwd_linear(enum cdnns_type type, enum cdnns_mode mode,
 		      enum cdnns_option option, size_t batch_size,
 		      size_t in_dim, size_t out_dim, const void *input,
 		      const void *weight, const void *bias, void *output)

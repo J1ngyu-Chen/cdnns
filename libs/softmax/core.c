@@ -1,6 +1,6 @@
 #include "core.h"
 
-void cdnns_softmax_fwd(enum cdnns_type type, enum cdnns_mode mode,
+void cdnns_fwd_softmax(enum cdnns_type type, enum cdnns_mode mode,
 		       enum cdnns_option option, size_t batch_size,
 		       size_t inout_dim, const void *input, void *output)
 {
