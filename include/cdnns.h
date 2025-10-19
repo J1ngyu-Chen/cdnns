@@ -32,34 +32,34 @@ enum cdnns_reduction {
 	CDNNS_REDUCTION_NONE
 };
 
-void cdnns_elu_fwd(enum cdnns_type type, enum cdnns_mode mode,
+void cdnns_fwd_elu(enum cdnns_type type, enum cdnns_mode mode,
 		   enum cdnns_option option, size_t batch_size,
 		   size_t inout_dim, const void *input, const void *alpha,
 		   void *output);
 
-void cdnns_leakyrelu_fwd(enum cdnns_type type, enum cdnns_mode mode,
+void cdnns_fwd_leakyrelu(enum cdnns_type type, enum cdnns_mode mode,
 			 enum cdnns_option option, size_t batch_size,
 			 size_t inout_dim, const void *input, const void *alpha,
 			 void *output);
 
-void cdnns_linear_fwd(enum cdnns_type type, enum cdnns_mode mode,
+void cdnns_fwd_linear(enum cdnns_type type, enum cdnns_mode mode,
 		      enum cdnns_option option, size_t batch_size,
 		      size_t in_dim, size_t out_dim, const void *input,
 		      const void *weight, const void *bias, void *output);
 
-void cdnns_relu_fwd(enum cdnns_type type, enum cdnns_mode mode,
+void cdnns_fwd_relu(enum cdnns_type type, enum cdnns_mode mode,
 		    enum cdnns_option option, size_t batch_size,
 		    size_t inout_dim, const void *input, void *output);
 
-void cdnns_sigmoid_fwd(enum cdnns_type type, enum cdnns_mode mode,
+void cdnns_fwd_sigmoid(enum cdnns_type type, enum cdnns_mode mode,
 		       enum cdnns_option option, size_t batch_size,
 		       size_t inout_dim, const void *input, void *output);
 
-void cdnns_softmax_fwd(enum cdnns_type type, enum cdnns_mode mode,
+void cdnns_fwd_softmax(enum cdnns_type type, enum cdnns_mode mode,
 		       enum cdnns_option option, size_t batch_size,
 		       size_t inout_dim, const void *input, void *output);
 
-void cdnns_tanh_fwd(enum cdnns_type type, enum cdnns_mode mode,
+void cdnns_fwd_tanh(enum cdnns_type type, enum cdnns_mode mode,
 		    enum cdnns_option option, size_t batch_size,
 		    size_t inout_dim, const void *input, void *output);
 

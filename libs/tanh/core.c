@@ -1,6 +1,6 @@
 #include "core.h"
 
-void cdnns_tanh_fwd(enum cdnns_type type, enum cdnns_mode mode,
+void cdnns_fwd_tanh(enum cdnns_type type, enum cdnns_mode mode,
 		    enum cdnns_option option, size_t batch_size,
 		    size_t inout_dim, const void *input, void *output)
 {
