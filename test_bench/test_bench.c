@@ -122,15 +122,15 @@ static void run()
 		cudaMemcpy(d_input, input, 28 * 28 * sizeof(float),
 			   cudaMemcpyHostToDevice);
 
-		cdnns_linear_fwd(CDNNS_TYPE_FP32, CDNNS_MODE_OVERWRITE,
+		cdnns_fwd_linear(CDNNS_TYPE_FP32, CDNNS_MODE_OVERWRITE,
 				 CDNNS_OPTION_FUSE_RELU, 1, 28 * 28, 100,
 				 d_input, d_weight_1, d_bias_1, d_hidden);
 
-		cdnns_linear_fwd(CDNNS_TYPE_FP32, CDNNS_MODE_OVERWRITE,
+		cdnns_fwd_linear(CDNNS_TYPE_FP32, CDNNS_MODE_OVERWRITE,
 				 CDNNS_OPTION_DEFAULT, 1, 100, 10, d_hidden,
 				 d_weight_2, d_bias_2, d_output);
 
-		cdnns_softmax_fwd(CDNNS_TYPE_FP32,
+		cdnns_fwd_softmax(CDNNS_TYPE_FP32,
 				  CDNNS_MODE_OVERWRITE_IN_PLACE,
 				  CDNNS_OPTION_DEFAULT, 1, 10, d_output,
 				  d_output);
