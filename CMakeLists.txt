@@ -5,12 +5,11 @@ project(cdnns C CUDA)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_STANDARD 11)
 
-# CUDA API
-include_directories(/usr/local/cuda-13.0/include)
-link_libraries(/usr/local/cuda-13.0/lib64/libcudart.so)
+set(SRC_LIST)
 
-foreach(sub_lib
+set(MODULES
 	elu
+	# fused_linear
 	leakyrelu
 	linear
 	relu
@@ -18,27 +17,25 @@ foreach(sub_lib
 	softmax
 	tanh
 )
-	file(GLOB_RECURSE SUB_LIB_SRCS CONFIGURE_DEPENDS
-		libs/${sub_lib}/*.c
-		libs/${sub_lib}/*.cu
+
+foreach(module IN LISTS MODULES)
+    	list(APPEND SRC_LIST
+		src/${module}/${module}_wrapper.c
+		src/${module}/${module}.c
 	)
-	add_library(${sub_lib} OBJECT
-		${SUB_LIB_SRCS}
-	)
-	target_include_directories(${sub_lib} PRIVATE
-		include
-		libs/${sub_lib}
-	)
-	target_compile_definitions(${sub_lib} PRIVATE
-		#-D IMPL_BASIC
-		-D IMPL_CUDA
-	)
-    	list(APPEND OBJECT_LIST $<TARGET_OBJECTS:${sub_lib}>)
 endforeach()
 
-add_library(cdnns SHARED ${OBJECT_LIST})
-set_target_properties(cdnns PROPERTIES 
-	PUBLIC_HEADER include/cdnns.h
+add_library(cdnns SHARED ${SRC_LIST})
+
+target_include_directories(cdnns PUBLIC
+	include/
+)
+
+target_sources(cdnns PRIVATE
+	${SRC_LIST}
+)
+target_link_libraries(cdnns PRIVATE
+	m
 )
 
 install(TARGETS cdnns
